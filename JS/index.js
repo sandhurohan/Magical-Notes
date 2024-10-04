@@ -1,6 +1,4 @@
-console.log("I am UP!!");
 showNotes()
-    // If User Adds Notes then Add to Local Storage
 let addBtn = document.getElementById('addBtn');
 addBtn.addEventListener('click', function(e) {
     let addTxt = document.getElementById('addTxt');
@@ -51,7 +49,6 @@ function showNotes() {
     }
 }
 
-// Function to Delete Notes
 function deleteNote(index) {
     console.log("I am Deleting Note", index);
     let notes = localStorage.getItem('notes');
@@ -78,6 +75,5 @@ search.addEventListener('input', function() {
         } else {
             element.style.display = 'none';
         }
-        //console.log(cardTxt);
     })
 });
